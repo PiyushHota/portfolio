@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Piyush Hota — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 id="brand-title">Piyush Hota</h1>
+        <p class="tagline">Data Analyst · Finance &amp; R2A Enthusiast</p>
+      </div>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="PIYUSH_HOTA_Resume.pdf" class="btn" download>Download Resume</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2>Hello 👋 I'm <span>Piyush</span></h2>
+          <p>Data Analyst with experience in Python, SQL, Power BI, Tableau. Passionate about transforming data into actionable business insights and applying analytics to finance operations (R2A).</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="mailto:piyushhota1232002@gmail.com" class="btn ghost">Email Me</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="stats-card">
+            <div><strong>Skills</strong><span>Python · SQL · Excel · Power BI</span></div>
+            <div><strong>Location</strong><span>Greater Noida, India</span></div>
+            <div><strong>Availability</strong><span>Open to opportunities</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title">Projects</h3>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="nlp">NLP</button>
+        </div>
+
+        <div id="project-grid" class="grid">
+          <!-- Project card: Sales Dashboard -->
+          <article class="card" data-tags="dashboard">
+            <h4>Sales Analytics Dashboard</h4>
+            <p>Interactive Power BI dashboard tracking KPIs and regional sales trends.</p>
+            <div class="card-actions">
+              <button class="open-project" data-title="Sales Analytics Dashboard" data-desc="Designed interactive KPI dashboards in Power BI to analyze regional sales performance.">Details</button>
+              <a href="#" class="code-link" target="_blank" rel="noopener">View</a>
+            </div>
+          </article>
+
+          <!-- Spam detection -->
+          <article class="card" data-tags="nlp ml">
+            <h4>Spam Message Detection</h4>
+            <p>TF-IDF + Logistic Regression classifier for SMS spam detection.</p>
+            <div class="card-actions">
+              <button class="open-project" data-title="Spam Message Detection" data-desc="Built a spam/ham classifier using TF-IDF vectorization and Logistic Regression.">Details</button>
+              <a href="#" class="code-link" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <!-- Customer Segmentation -->
+          <article class="card" data-tags="dashboard">
+            <h4>Customer Segmentation (Tableau)</h4>
+            <p>Clustering-based segmentation with interactive Tableau visualizations.</p>
+            <div class="card-actions">
+              <button class="open-project" data-title="Customer Segmentation" data-desc="Applied clustering to segment customers and designed Tableau dashboards for demographic insights.">Details</button>
+              <a href="#" class="code-link" target="_blank" rel="noopener">Preview</a>
+            </div>
+          </article>
+
+          <!-- Deep learning -->
+          <article class="card" data-tags="ml">
+            <h4>Lung Cancer Detection (Deep Learning)</h4>
+            <p>Binary classification CNN using TensorFlow/Keras for medical image detection.</p>
+            <div class="card-actions">
+              <button class="open-project" data-title="Lung Cancer Detection" data-desc="Implemented a CNN model in TensorFlow and Keras for classifying medical images.">Details</button>
+              <a href="#" class="code-link" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title">Experience & Trainings</h3>
+        <ul class="timeline">
+          <li><strong>Dev Town</strong> — Data Science Training (Feb 2023 – May 2023)</li>
+          <li><strong>IBM</strong> — Data Analytics Program (Jun 2023 – Jul 2023)</li>
+          <li><strong>Google for Developers</strong> — AI/ML Program (Jul 2024 – Sep 2024)</li>
+          <li><strong>AWS Academy</strong> — Cloud Foundations (Oct 2024 – Dec 2024)</li>
+          <li><strong>Innovate</strong> — Data Science Training (Sep 2024 – Jan 2025)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3 class="section-title">Contact</h3>
+        <p>Want to work together or call about an opportunity? Send me a message — I usually reply quickly.</p>
+        <a href="mailto:piyushhota1232002@gmail.com" class="btn">Email Me</a>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/piyush-hota-a39590233" target="_blank">LinkedIn</a>
+          <a href="https://github.com/PiyushHota" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div class="modal-links">
+        <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn">Open Project</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Piyush Hota — Data Analyst · Finance & R2A Enthusiast</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
